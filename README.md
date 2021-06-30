@@ -4,7 +4,7 @@ Introduction to Recursion In Java
 A method that calls itself is known as a recursive method. And, this process is known as recursion.
 In order to stop the recursive call, we need to provide some conditions inside the method. Otherwise, the method will be called infinitely.
 
-####Types of Recursion
+### Types of Recursion
 
 1. Infinite Recursion
    
@@ -35,7 +35,7 @@ In order to stop the recursive call, we need to provide some conditions inside t
 
 3. Recursive Call.
 
-###Examples of Recursive Algorithm
+### Examples of Recursive Algorithm
 
 1. Summing list of numbers
 2. Factorial of a number
