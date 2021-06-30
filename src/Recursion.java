@@ -6,18 +6,39 @@ public class Recursion {
     public static void main(String[] args) {
 
         // Example 1
-        /**try {
+        infiniteExample();
+
+        // Example 2
+        sumOfNumbersExample();
+
+        // Example 3
+        factorialExample();
+    }
+
+    /**
+     * Example 1 Infinite Example
+     */
+    static void infiniteExample(){
+        try {
             infiniteRecursion();
         } catch (StackOverflowError e) {
             System.err.println("StackOverFlowError is thrown!");
-        }*/
+        }
+    }
 
-//        System.out.printf("Sum is %s%n", sumOfNumbers(1,2,3,4,5));
-        // Example 2
+    /**
+     * Example 3 Infinite Example
+     */
+    static void factorialExample(){
+         int number = 3;
+         System.out.printf("Factorial of the number %x is %s%n", number, factorial(number));
+    }
 
-        /**int number = 3;
-        System.out.printf("Factorial of the number %x is %s%n", number, factorial(number));*/
-
+    /**
+     * Example 2 Infinite Example
+     */
+    static void sumOfNumbersExample(){
+        System.out.printf("Sum is %s%n", sumOfNumbers(1,2,3,4,5));
     }
 
 
@@ -65,8 +86,6 @@ public class Recursion {
         else
             return args[args.length-1] + sumOfNumbers(Arrays.copyOf(args, args.length-1));
     }
-
-
 }
 
 
