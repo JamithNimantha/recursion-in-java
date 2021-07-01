@@ -21,7 +21,7 @@ In order to stop the recursive call, we need to provide some conditions inside t
         x++;
         if(x <= 10){
            System.out.println("This is a finite recursion!"+x);
-           finiteRecursion();
+           finiteRecursion(x);
         }
     }
     ```
