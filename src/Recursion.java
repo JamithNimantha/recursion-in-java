@@ -5,14 +5,7 @@ public class Recursion {
 
     public static void main(String[] args) {
 
-        // Example 1
-        infiniteExample();
-
-        // Example 2
-        sumOfNumbersExample();
-
-        // Example 3
-        factorialExample();
+        mendaAndDikkaSmoking(100);
     }
 
     /**
@@ -85,6 +78,19 @@ public class Recursion {
             return 0;
         else
             return args[args.length-1] + sumOfNumbers(Arrays.copyOf(args, args.length-1));
+    }
+
+    static int mendaAndDikkaSmoking(int cigarPercentage) {
+        System.out.printf("Cigar Percentage is %s%%%n", cigarPercentage);
+        if (cigarPercentage > 0) {
+            boolean isSomeOneComing = new Random().nextBoolean();
+            if (!isSomeOneComing){
+                cigarPercentage -= 5;
+            }
+            return mendaAndDikkaSmoking(cigarPercentage);
+        } else {
+            return -1;
+        }
     }
 }
 
